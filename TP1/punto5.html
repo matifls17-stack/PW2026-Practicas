@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscripcion de curso</title>
 </head>
 <body>
-    
+    <h1>Inscripción a Curso</h1>
+    <p>Para más información <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjHrrzh1K2XAxWaTEgAHbEkBsEYACICCAIQABoCY2U&co=1&ase=2&gclid=CjwKCAjwoaLWBhAWEiwAnyituxZZIlTa_cb1YIjnjHkW3bkxR8D0xEWlVIw6yg5kUqBWqOt-EIR-ZBoC_F4QAvD_BwE&ei=bz_JauvJCKmI5OUPv8SYuQ4&cid=CAASuwHkaHFQoXH44ygZND1XBN_5rb2QK1nVPDpwi4a9Ld1Pe4VvREU3uEEaus0GOHwwWTMMPXyf8UCFcD8g3vm1TTaif3u49iExR-KSS5sGwW3R7B4fILC3EJfXYFp3l1YyrXbblTwZNU6BJAgSpnYQFgNKCdNFO7mnVNft93ovnWKNKCGtOOGQOltNA0SWglbSUucbXEQJncp59Nrt7XK8_bWBcK-ikX9OUSWeYqzH3GuA7hRh_ON2-H1zC17R&cce=2&category=acrcp_v1_32&sig=AOD64_1gNCr0QMeD1M6N4MVj6sHhlZpOug&q&sqi=2&nis=4&adurl&ved=2ahUKEwirvbbh1K2XAxUpBLkGHT8iJucQ0Qx6BAhsEAE">Cursos</a></p>
+    <h2>Datos personales</h2>
+    <form action="/enviar" method="post">
+    <label for="nombre">Nombre:</label> 
+<input type="text" id="nombre" name="nombre">
+<br>
+<label for="apellido">Apellido:</label> 
+<input type="text" id="apellido" name="apellido">
+<h2>Datos de contacto</h2>
+<label for="correoelec">Email:</label> 
+<input type="email" id="correoelec" name="correoelec">
+<br>
+<label for="telefono">Teléfono:</label> 
+<input type="tel" id="telefono" name="telefono">
+<br>
+<h2>Selección de curso</h2>
+<label for="curso">Curso:</label>
+<select name="curso">
+<optgroup label="Informática">
+ <option value="1">Inteligencia Artificial en la Programación</option>
+ <option value="2">Programación en la nube</option>
+ <option value="3">Desarrollo de aplicaciones móviles</option>
+</optgroup>
+<optgroup label="Idiomas">
+ <option value="es">Español</option>
+ <option value="pt">Portugués</option>
+ <option value="en">Inglés</option>
+</optgroup>
+</select>
+<h2>Modalidad de cursado</h2>
+<label for="modalidad">Modalidad:</label>
+<select name="modalidad">
+<option value="presencial">Presencial</option>
+<option value="virtual">Virtual</option>
+</select>
+<h2>Conocimientos previos</h2>
+<h3>Para Informática</h3>
+<label for="programacion">Programación básica:</label>
+<input type="checkbox" name="programacion" value="programacion">
+<br>
+<label for="mateinformatica">Matemática para informática:</label>
+<input type="checkbox" name="mateinformatica" value="mateinformatica">
+<h3>Para Idiomas</h3>
+<label for="nivelidioma">Nivel de idioma:</label>
+<select name="nivelidioma">
+ <option value="basico">Básico</option>
+ <option value="intermedio">Intermedio</option>
+ <option value="avanzado">Avanzado</option>
+</select>
+<h2>Comentarios o sugerencias</h2>
+<textarea name="comentarios" rows="4" cols="50">
+Escribí tu comentario..
+</textarea>
+<h2>Confirmación</h2>
+    <input type="checkbox" name="confirmacion" value="confirmacion" required>
+    <label for="confirmacion">Acepto las condiciones de inscripción</label>
+    <br>
+    <button type="submit">Enviar mensaje</button>
+    <button type="reset">Borrar formulario</button>
+</form>
 </body>
 </html>
