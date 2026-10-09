@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripcion de curso</title>
+    <title>Inscripción a Curso</title>
 </head>
 <body>
     <h1>Inscripción a Curso</h1>
-    <p>Para más información <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjHrrzh1K2XAxWaTEgAHbEkBsEYACICCAIQABoCY2U&co=1&ase=2&gclid=CjwKCAjwoaLWBhAWEiwAnyituxZZIlTa_cb1YIjnjHkW3bkxR8D0xEWlVIw6yg5kUqBWqOt-EIR-ZBoC_F4QAvD_BwE&ei=bz_JauvJCKmI5OUPv8SYuQ4&cid=CAASuwHkaHFQoXH44ygZND1XBN_5rb2QK1nVPDpwi4a9Ld1Pe4VvREU3uEEaus0GOHwwWTMMPXyf8UCFcD8g3vm1TTaif3u49iExR-KSS5sGwW3R7B4fILC3EJfXYFp3l1YyrXbblTwZNU6BJAgSpnYQFgNKCdNFO7mnVNft93ovnWKNKCGtOOGQOltNA0SWglbSUucbXEQJncp59Nrt7XK8_bWBcK-ikX9OUSWeYqzH3GuA7hRh_ON2-H1zC17R&cce=2&category=acrcp_v1_32&sig=AOD64_1gNCr0QMeD1M6N4MVj6sHhlZpOug&q&sqi=2&nis=4&adurl&ved=2ahUKEwirvbbh1K2XAxUpBLkGHT8iJucQ0Qx6BAhsEAE">Cursos</a></p>
+    <p>Para más información <a href="https://www.techtitute.com/es-ar/informatica/diplomado/motores-de-videojuegos">Curso</a></p>
     <h2>Datos personales</h2>
     <form action="/enviar" method="post">
     <label for="nombre">Nombre:</label> 
@@ -15,6 +15,9 @@
 <br>
 <label for="apellido">Apellido:</label> 
 <input type="text" id="apellido" name="apellido">
+<br>
+<label for="fechanac">Fecha de nacimiento:</label> 
+<input type="date" id="fechanac" name="fechanac">
 <h2>Datos de contacto</h2>
 <label for="correoelec">Email:</label> 
 <input type="email" id="correoelec" name="correoelec">
@@ -26,7 +29,7 @@
 <label for="curso">Curso:</label>
 <select name="curso">
 <optgroup label="Informática">
- <option value="1">Inteligencia Artificial en la Programación</option>
+ <option value="1">Motores de videojuegos</option>
  <option value="2">Programación en la nube</option>
  <option value="3">Desarrollo de aplicaciones móviles</option>
 </optgroup>
@@ -50,13 +53,13 @@
 <label for="mateinformatica">Matemática para informática:</label>
 <input type="checkbox" name="mateinformatica" value="mateinformatica">
 <h3>Para Idiomas</h3>
-<label for="nivelidioma">Nivel de idioma:</label>
+<label for="nivelidioma">Nivel del idioma:</label>
 <select name="nivelidioma">
  <option value="basico">Básico</option>
  <option value="intermedio">Intermedio</option>
  <option value="avanzado">Avanzado</option>
 </select>
-<h2>Comentarios o sugerencias</h2>
+<h2>Comentario/Información adicional</h2>
 <textarea name="comentarios" rows="4" cols="50">
 Escribí tu comentario..
 </textarea>
