@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Curso</title>
+</head>
+<body>
+    <h1>Inscripción a Curso</h1>
+    <p>Para más información <a href="https://www.techtitute.com/es-ar/informatica/diplomado/motores-de-videojuegos">Curso</a></p>
+    <h2>Datos personales</h2>
+    <form action="/enviar" method="post">
+    <label for="nombre">Nombre:</label> 
+<input type="text" id="nombre" name="nombre">
+<br>
+<label for="apellido">Apellido:</label> 
+<input type="text" id="apellido" name="apellido">
+<br>
+<label for="fechanac">Fecha de nacimiento:</label> 
+<input type="date" id="fechanac" name="fechanac">
+<h2>Datos de contacto</h2>
+<label for="correoelec">Email:</label> 
+<input type="email" id="correoelec" name="correoelec">
+<br>
+<label for="telefono">Teléfono:</label> 
+<input type="tel" id="telefono" name="telefono">
+<br>
+<h2>Selección de curso</h2>
+<label for="curso">Curso:</label>
+<select name="curso">
+<optgroup label="Informática">
+ <option value="1">Motores de videojuegos</option>
+ <option value="2">Programación en la nube</option>
+ <option value="3">Desarrollo de aplicaciones móviles</option>
+</optgroup>
+<optgroup label="Idiomas">
+ <option value="es">Español</option>
+ <option value="pt">Portugués</option>
+ <option value="en">Inglés</option>
+</optgroup>
+</select>
+<h2>Modalidad de cursado</h2>
+<label for="modalidad">Modalidad:</label>
+<select name="modalidad">
+<option value="presencial">Presencial</option>
+<option value="virtual">Virtual</option>
+</select>
+<h2>Conocimientos previos</h2>
+<h3>Para Informática</h3>
+<label for="programacion">Programación básica:</label>
+<input type="checkbox" name="programacion" value="programacion">
+<br>
+<label for="mateinformatica">Matemática para informática:</label>
+<input type="checkbox" name="mateinformatica" value="mateinformatica">
+<h3>Para Idiomas</h3>
+<label for="nivelidioma">Nivel del idioma:</label>
+<select name="nivelidioma">
+ <option value="basico">Básico</option>
+ <option value="intermedio">Intermedio</option>
+ <option value="avanzado">Avanzado</option>
+</select>
+<h2>Comentario/Información adicional</h2>
+<textarea name="comentarios" rows="4" cols="50">
+Escribí tu comentario..
+</textarea>
+<h2>Confirmación</h2>
+    <input type="checkbox" name="confirmacion" value="confirmacion" required>
+    <label for="confirmacion">Acepto las condiciones de inscripción</label>
+    <br>
+    <button type="submit">Enviar mensaje</button>
+    <button type="reset">Borrar formulario</button>
+</form>
+</body>
+</html>
